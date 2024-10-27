@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabinets</title>
+    <link rel="stylesheet" href="new category.css">
+</head>
+<body>
+    <header>
+        <div id="navbarContainer"></div>
+        <div class="image-container">
+            <div class="psu">
+                <img src="../images/c1.png" alt="cabinet1" class="side-by-side">
+                <img src="../images/c2.png" alt="cabinet2" class="side-by-side">
+            </div>
+        </div>
+        
+    </header>
+    <h1>Cabinets</h1>
+    
+    
+
+    <section class="product-list">
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/09/Ant-Value-CV100-Black.jpg" alt="Ant Value CV100 (Black)" class="product-image">
+            <h3 class="product-name">Ant Value CV100 (Black)</h3>
+            <p class="product-price">₹ 1,750.00</p>
+            <p class="product-description">Brand : Ant</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Ant Value CV100 (Black)')">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/09/Ant-Value-CV100-White.jpg" alt="Ant Value CV100 (White)" class="product-image">
+            <h4 class="product-name">Ant Value CV100 (White)</h4>
+            <p class="product-price">₹ 5,750.00</p>
+            <p class="product-description">Brand : Ant</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Ant Value CV100 (White)')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/07/Antec-AX83-RGB-Black.webp" alt="Antec AX83 RGB (Black)" class="product-image">
+            <h5 class="product-name">Antec AX83 RGB (Black)</h5>
+            <p class="product-price">₹ 8,550.00</p>
+            <p class="product-description">Brand : Antec</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Antec AX83 RGB (Black)')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2023/01/Circle-Elegantor-X1-RGB.jpg" alt="Circle Elegantor X1 ARGB (Black)" class="product-image">
+            <h6 class="product-name">Circle Elegantor X1 ARGB (Black)</h6>
+            <p class="product-price">₹ 5,750.00</p>
+            <p class="product-description">Brand : Circle</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Circle Elegantor X1 ARGB (Black)')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/06/MSI-MAG-Forge-120A-Airflow-Black.webp" alt="MSI MAG Forge 120A Airflow (Black)" class="product-image">
+            <h7 class="product-name">MSI MAG Forge 120A Airflow (Black)</h7>
+            <p class="product-price">₹ 14,750.00</p>
+            <p class="product-description">Brand : MSI</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('MSI MAG Forge 120A Airflow (Black)')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2023/11/NZXT-H6-Flow-RGB-Black.webp" alt="NZXT H6 Flow RGB (Black)" class="product-image">
+            <h8 class="product-name">NZXT H6 Flow RGB (Black)</h8>
+            <p class="product-price">₹ 10,580.00</p>
+            <p class="product-description">Brand : NZXT</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('NZXT H6 Flow RGB (Black)')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2023/11/NZXT-H6-Flow-RGB-White.webp" alt="NZXT H6 Flow RGB (White)" class="product-image">
+            <h9 class="product-name">NZXT H6 Flow RGB (White)</h9>
+            <p class="product-price">₹ 7,950.00</p>
+            <p class="product-description">Brand : NZXT</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('NZXT H6 Flow RGB (White)')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2023/03/NZXT-H9-Flow-ATX-Mid-Tower-Cabinet-Black.webp" alt="NZXT H9 Flow (Black)" class="product-image">
+            <h10 class="product-name">NZXT H9 Flow (Black)</h10>
+            <p class="product-price">₹ 17,450.00</p>
+            <p class="product-description">Brand : NZXT</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('NZXT H9 Flow (Black)')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2022/02/Lian-Li-PC-O11-Dynamic-Razer-Edition-Black.webp" alt="Lian Li PC-O11 Dynamic Razer Edition (Black)" class="product-image">
+            <h11 class="product-name">Lian Li PC-O11 Dynamic Razer Edition (Black)</h11>
+            <p class="product-price">₹ 15,490.00</p>
+            <p class="product-description">Brand : Lian</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Lian Li PC-O11 Dynamic Razer Edition (Black)')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2022/06/Antec-Torque.webp" alt="Antec Torque (Black/Red)" class="product-image">
+            <h12 class="product-name">Antec Torque (Black/Red)</h12>
+            <p class="product-price">₹ 15,550.00</p>
+            <p class="product-description">Brand : Antec</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Antec Torque (Black/Red)')">Add to Cart</button>
+        </div>
+        
+
+        <!-- Add more cabinet products similarly -->
+    </section>
+
+    <script src="new category.js"></script>
+    <script src="loadnav.js"></script>
+</body>
+</html>

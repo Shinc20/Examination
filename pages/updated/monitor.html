@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitor</title>
+    <link rel="stylesheet" href="monitor.css">
+</head>
+<body>
+    <header>
+        <div id="navbarContainer"></div>
+        <h1>Gaming/Productivity Monitors</h1>
+        <div class="image-container">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/07/msi-banner.png" alt="monitor1" class="side-by-side">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/07/viewsonic-monitor.png" alt="monitor2" class="side-by-side">
+        </div>
+        
+
+        
+    </header>
+    <h1>Monitor</h1>
+    <h2>Full range of monitors for all your needs</h2>
+
+    <section class="product-list">
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/09/ViewSonic-VA2215-H-22-Inch-1080p-100Hz.jpg" alt="ViewSonic VA2215-H | 22 Inch 1080p 100Hz" class="product-image">
+            <h3 class="product-name">ViewSonic VA2215-H | 22 Inch 1080p 100Hz</h3>
+             <p class="product-price">₹ 5,990.00</p>
+            <p class="product-description">Brand : ViewSonic</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('ViewSonic VA2215-H | 22 Inch 1080p 100Hz')">Add to Cart</button>
+        </div>
+        
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/09/MSI-PRO-MP251-25-Inch-1080p-100Hz-IPS-1ms.webp" alt="MSI PRO MP251 | 25 Inch 1080p 100Hz IPS" class="product-image">
+            <h4 class="product-name">MSI PRO MP251 | 25 Inch 1080p 100Hz IPS</h4>
+             <p class="product-price">₹ 6,190.00</p>
+            <p class="product-description">Brand : MSI</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('MSI PRO MP251 | 25 Inch 1080p 100Hz IPS')">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/04/MSI-G244F-E2.webp" alt="MSI G244F E2 | 24 Inch 1080p 180Hz IPS" class="product-image">
+            <h3 class="product-name">MSI G244F E2 | 24 Inch 1080p 180Hz IPS</h3>
+             <p class="product-price">₹ 6,990.00</p>
+            <p class="product-description">Brand : MSI</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('MSI G244F E2 | 24 Inch 1080p 180Hz IPS')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/03/ViewSonic-VX2479-HD-PRO-24%E2%80%B3-1080p-165Hz-IPS-1ms.webp" alt="ViewSonic VX2479-HD-PRO | 24 Inch 1080p 165Hz IPS" class="product-image">
+            <h3 class="product-name">ViewSonic VX2479-HD-PRO | 24 Inch 1080p 165Hz IPS</h3>
+             <p class="product-price">₹ 8,000.00</p>
+            <p class="product-description">Brand : ViewSonic</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('ViewSonic VX2479-HD-PRO | 24 Inch 1080p 165Hz IPS')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2023/04/Gigabyte-G24F-2-3.webp" alt="Gigabyte G24F 2 | 24 Inch 1080p 165Hz IPS" class="product-image">
+            <h3 class="product-name">Gigabyte G24F 2 | 24 Inch 1080p 165Hz IPS</h3>
+             <p class="product-price">₹ 10,490.00</p>
+            <p class="product-description">Brand : Gigabyte</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Gigabyte G24F 2 | 24 Inch 1080p 165Hz IPS')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/06/Gigabyte-M27Q-X-27-Inch-1440p-2K-240Hz-IPS-1ms.webp" alt="Gigabyte M27Q X | 27 Inch 1440p (2K) 240Hz IPS 1ms" class="product-image">
+            <h3 class="product-name">Gigabyte M27Q X | 27 Inch 1440p (2K) 240Hz IPS 1ms</h3>
+             <p class="product-price">₹ 16,990.00</p>
+            <p class="product-description">Brand : Gigabyte</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Gigabyte M27Q X | 27 Inch 1440p (2K) 240Hz IPS 1ms')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/10/MSI-MAG-342CQR-E2-34-Inch-Ultrawide-1440p-2K-180Hz.png" alt="MSI MAG 342CQR E2 | 34 Inch Ultrawide 1440p (2K) 180Hz" class="product-image">
+            <h3 class="product-name">MSI MAG 342CQR E2 | 34 Inch Ultrawide 1440p (2K) 180Hz</h3>
+             <p class="product-price">₹ 8,000.00</p>
+            <p class="product-description">Brand : MSI</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('MSI MAG 342CQR E2 | 34 Inch Ultrawide 1440p (2K) 180Hz')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/06/LG-27GR93U-B.jpg" alt="LG 27GR93U-B | 27 Inch 2160p (4K) 144Hz IPS" class="product-image">
+            <h3 class="product-name">LG 27GR93U-B | 27 Inch 2160p (4K) 144Hz IPS</h3>
+             <p class="product-price">₹ 6,990.00</p>
+            <p class="product-description">Brand : LG </p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('LG 27GR93U-B | 27 Inch 2160p (4K) 144Hz IPS')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/03/LG-27GN95R-B-27-Inch-2160p-4K-144Hz-IPS.webp" alt="LG 27GN95R-B | 27 Inch 2160p (4K) 144Hz IPS" class="product-image">
+            <h3 class="product-name">LG 27GN95R-B | 27 Inch 2160p (4K) 144Hz IPS</h3>
+             <p class="product-price">₹ 46,990.00</p>
+            <p class="product-description">Brand : LG</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('LG 27GN95R-B | 27 Inch 2160p (4K) 144Hz IPS')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/06/Gigabyte-GS27F.webp" alt="Gigabyte GS27F | 27 Inch 1080p 165Hz IPS 1ms" class="product-image">
+            <h3 class="product-name">Gigabyte GS27F | 27 Inch 1080p 165Hz IPS 1ms</h3>
+             <p class="product-price">₹ 45,780.00</p>
+            <p class="product-description">Brand : Gigabyte</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Gigabyte GS27F | 27 Inch 1080p 165Hz IPS 1ms')">Add to Cart</button>
+        </div>
+
+
+        <!-- Add more CPUs like this -->
+    </section>
+
+    <script src="monitor.js"></script>
+    <script src="loadnav.js"></script>
+</body>
+</html>

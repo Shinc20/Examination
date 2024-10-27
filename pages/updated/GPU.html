@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphics Card</title>
+    <link rel="stylesheet" href="new category.css">
+</head>
+<body>
+    <header>
+        <div id="navbarContainer"></div>
+        <div class="image-container">
+            <div class="psu">
+                <img src="../images/gpu1.png" alt="cabinet1" class="side-by-side">
+                <img src="../images/gpu 2.png" alt="cabinet2" class="side-by-side">
+                <img src="../images/gpu3.png" alt="cabinet3" class="side-by-side">
+                <img src="../images/gpu4.png" alt="cabinet4" class="side-by-side">
+            </div>
+        </div>
+        
+    </header>
+    <h1>Graphics Card</h1>
+
+    <section class="product-list">
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2022/06/Zotac-RTX-3060-Twin-Edge-12GB-Gaming-Graphics-Card.webp" alt="Zotac RTX 3060 Twin Edge 12GB" class="product-image">
+            <h3 class="product-name">Zotac RTX 3060 Twin Edge 12GB</h3>
+            <p class="product-price">₹ 69,000.00</p>
+            <p class="product-description">Brand : Zotac</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Zotac RTX 3060 Twin Edge 12GB')">Add to Cart</button>
+        </div>
+        
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2022/10/Gigabyte-RTX-3060-Windforce-OC-12GB.jpg" alt="Gigabyte RTX 3060 Windforce OC 12GB" class="product-image">
+            <h4 class="product-name">Gigabyte RTX 3060 Windforce OC 12GB</h4>
+            <p class="product-price">₹ 58,000.00</p>
+            <p class="product-description">Brand : Gigabyte</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Gigabyte RTX 3060 Windforce OC 12GB')">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/08/ASUS-Dual-RTX-4060-Ti-White-OC-Edition-8GB.jpg" alt="ASUS Dual RTX 4060 Ti White OC Edition 8GB" class="product-image">
+            <h3 class="product-name">ASUS Dual RTX 4060 Ti White OC Edition 8GB</h3>
+            <p class="product-price">₹ 18,780.00</p>
+            <p class="product-description">Brand : ASUS</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('ASUS Dual RTX 4060 Ti White OC Edition 8GB')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2023/09/MSI-RTX-4060-Ti-Ventus-2X-Black-OC-8GB.webp" alt="MSI RTX 4060 Ti Ventus 2X Black OC 8GB" class="product-image">
+            <h4 class="product-name">MSI RTX 4060 Ti Ventus 2X Black OC 8GB</h4>
+            <p class="product-price">₹ 38,690.00</p>
+            <p class="product-description">Brand : MSI</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('MSI RTX 4060 Ti Ventus 2X Black OC 8GB')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2023/11/ASRock-RX-7700-XT-Challenger-OC-12GB.webp" alt="ASRock RX 7700 XT Challenger OC 12GB" class="product-image">
+            <h4 class="product-name">ASRock RX 7700 XT Challenger OC 12GB</h4>
+            <p class="product-price">₹ 98,000.00</p>
+            <p class="product-description">Brand : ASRock</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('ASRock RX 7700 XT Challenger OC 12GB')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/08/ASUS-Dual-RX-7700-XT-OC-Edition-12GB.webp" alt="ASUS Dual RX 7700 XT OC Edition 12GB" class="product-image">
+            <h4 class="product-name">ASUS Dual RX 7700 XT OC Edition 12GB</h4>
+            <p class="product-price">₹ 41,900.00</p>
+            <p class="product-description">Brand : ASUS</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('ASUS Dual RX 7700 XT OC Edition 12GB')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/08/Gigabyte-RTX-4070-Windforce-2X-OC-12GB.jpg" alt="Gigabyte RTX 4070 Windforce 2X OC 12GB" class="product-image">
+            <h4 class="product-name">Gigabyte RTX 4070 Windforce 2X OC 12GB</h4>
+            <p class="product-price">₹ 98,000.00</p>
+            <p class="product-description">Brand : Gigabyte</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Gigabyte RTX 4070 Windforce 2X OC 12GB')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/06/Zotac-RTX-4070-Super-Twin-Edge-OC-12GB-WHITE.webp" alt="Zotac RTX 4070 Super Twin Edge OC 12GB (WHITE)" class="product-image">
+            <h4 class="product-name">Zotac RTX 4070 Super Twin Edge OC 12GB (WHITE)</h4>
+            <p class="product-price">₹ 68,000.00</p>
+            <p class="product-description">Brand : Zotac</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Zotac RTX 4070 Super Twin Edge OC 12GB (WHITE)')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/07/Gigabyte-RTX-4090-Windforce-V2-24GB.jpg" alt="Gigabyte RTX 4090 Windforce V2 24GB" class="product-image">
+            <h4 class="product-name">Gigabyte RTX 4090 Windforce V2 24GB</h4>
+            <p class="product-price">₹2,09,990</p>
+            <p class="product-description">Brand : Gigabyte</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Gigabyte RTX 4090 Windforce V2 24GB')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/02/ASUS-ROG-Strix-Gaming-RTX-4090-OC-Edition-24GB.webp" alt="ASUS ROG Strix Gaming RTX 4090 OC Edition 24GB" class="product-image">
+            <h4 class="product-name">ASUS ROG Strix Gaming RTX 4090 OC Edition 24GB</h4>
+            <p class="product-price">₹2,34,990</p>
+            <p class="product-description">Brand : ASUS</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('ASUS ROG Strix Gaming RTX 4090 OC Edition 24GB')">Add to Cart</button>
+        </div>
+
+        <!-- Add more CPUs like this -->
+    </section>
+
+    <script src="new category.js"></script>
+    <script src="loadnav.js"></script>
+</body>
+</html>

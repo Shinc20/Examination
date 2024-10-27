@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSD</title>
+    <link rel="stylesheet" href="new category.css">
+</head>
+<body>
+    <header>
+        <div id="navbarContainer"></div>
+        <div class="image-container">
+            <div class="psu">
+                <img src="../images/ss2.png" alt="cabinet1" class="side-by-side">
+                <img src="../images/ssd1.png" alt="cabinet2" class="side-by-side">
+            </div>
+        </div>
+        
+    </header>
+    <h1>SSD</h1>
+
+    <section class="product-list">
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/07/EVM-256GB-SATA-SSD.jpg" alt="EVM 256GB SATA SSD" class="product-image">
+            <h3 class="product-name">EVM 256GB SATA SSD</h3>
+            <p class="product-price">₹ 1,690.00</p>
+            <p class="product-description">Brand : EVM</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('EVM 256GB SATA SSD')">Add to Cart</button>
+        </div>
+        
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2022/02/Crucial-BX500-240GB.webp" alt="Crucial BX500 500GB" class="product-image">
+            <h4 class="product-name">Crucial BX500 500GB</h4>
+            <p class="product-price">₹ 2,850.00</p>
+            <p class="product-description">Brand : Crucial</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Crucial BX500 500GB')">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2023/09/Crucial-P3-Plus-500GB-M.2-NVMe-Gen4.webp" alt="Crucial P3 Plus 500GB M.2 NVMe Gen4" class="product-image">
+            <h3 class="product-name">Crucial P3 Plus 500GB M.2 NVMe Gen4</h3>
+            <p class="product-price">₹ 1,590.00</p>
+            <p class="product-description">Brand : Crucial</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Crucial P3 Plus 500GB M.2 NVMe Gen4')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/10/Kingston-NV3-500GB-M.2-NVMe-Gen4.jpg" alt="Kingston NV3 500GB M.2 NVMe Gen4" class="product-image">
+            <h3 class="product-name">Kingston NV3 500GB M.2 NVMe Gen4</h3>
+            <p class="product-price">₹ 3,790.00</p>
+            <p class="product-description">Brand : Kingston</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Kingston NV3 500GB M.2 NVMe Gen4')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/03/Adata-XPG-Gammix-S60-512GB-M.2-NVMe-Gen4.jpg" alt="Adata XPG Gammix S60 512GB M.2 NVMe Gen4" class="product-image">
+            <h3 class="product-name">Adata XPG Gammix S60 512GB M.2 NVMe Gen4</h3>
+            <p class="product-price">₹ 6,990.00</p>
+            <p class="product-description">Brand : Adata</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Adata XPG Gammix S60 512GB M.2 NVMe Gen4')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2022/06/Samsung-980-Pro-500GB-Gen4-M.2-NVMe-Internal-SSD.webp" alt="Samsung 980 Pro 500GB M.2 NVMe Gen4" class="product-image">
+            <h3 class="product-name">Samsung 980 Pro 500GB M.2 NVMe Gen4</h3>
+            <p class="product-price">₹ 16,290.00</p>
+            <p class="product-description">Brand : Samsung</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Samsung 980 Pro 500GB M.2 NVMe Gen4')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2022/12/Western-Digital-Black-SN850X-1TB-M.2-NVMe-Gen4-Internal-SSD.webp" alt="Western Digital Black SN850X 1TB M.2 NVMe Gen4" class="product-image">
+            <h3 class="product-name">Western Digital Black SN850X 1TB M.2 NVMe Gen4</h3>
+            <p class="product-price">₹ 8,690.00</p>
+            <p class="product-description">Brand : WD</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Western Digital Black SN850X 1TB M.2 NVMe Gen4')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/06/Acer-Predator-GM7000-1TB-M.2-NVMe-Gen4.jpg" alt="Acer Predator GM7000 1TB M.2 NVMe Gen4" class="product-image">
+            <h3 class="product-name">Acer Predator GM7000 1TB M.2 NVMe Gen4</h3>
+            <p class="product-price">₹ 8,690.00</p>
+            <p class="product-description">Brand : Acer</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Acer Predator GM7000 1TB M.2 NVMe Gen4')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/07/Kingston-FURY-Renegade-1TB-M.2-NVMe-Gen4.webp" alt="Kingston FURY Renegade 1TB M.2 NVMe Gen4" class="product-image">
+            <h3 class="product-name">Kingston FURY Renegade 1TB M.2 NVMe Gen4</h3>
+            <p class="product-price">₹ 9,590.00</p>
+            <p class="product-description">Brand : Kingston</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Kingston FURY Renegade 1TB M.2 NVMe Gen4')">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2023/08/Western-Digital-Black-SN850X-2TB-M.2-NVMe-Gen4.webp" alt="Western Digital Black SN850X 2TB M.2 NVMe Gen4" class="product-image">
+            <h3 class="product-name">Western Digital Black SN850X 2TB M.2 NVMe Gen4</h3>
+            <p class="product-price">₹ 15,790.00</p>
+            <p class="product-description">Brand : WD</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Western Digital Black SN850X 2TB M.2 NVMe Gen4','₹ 15,790.00')">Add to Cart</button>
+        </div>
+
+
+        <!-- Add more CPUs like this -->
+    </section>
+
+    <script src="new category.js"></script>
+    <script src="loadnav.js"></script>
+</body>
+</html>
