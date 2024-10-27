@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Power Supply</title>
+    <link rel="stylesheet" href="new component.css">
+</head>
+<body>
+    <header>
+        <div id="navbarContainer"></div>
+        <div class="image-container">
+            <div class="psu">
+                <img src="../images/psu1.png" alt="cabinet1" class="side-by-side">
+                <img src="../images/psu2.png" alt="cabinet2" class="side-by-side">
+                <img src="../images/psu3.png" alt="cabinet2" class="side-by-side">
+            </div>
+        </div>
+        
+    </header>
+    <h1>Power Supply </h1>
+
+    <section class="product-list">
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2023/08/Antec-Atom-V450-V2.webp" alt="Antec Atom V450 V2 450 Watt" class="product-image">
+            <h3 class="product-name">Antec Atom V450 V2 450 Watt</h3>
+            <p class="product-price">₹ 2,790.00</p>
+            <p class="product-description">Brand : Antec</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Antec Atom V450 V2 450 Watt',2790)">Add to Cart</button>
+        </div>
+        
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/09/Ant-Esports-RX550-550-Watt-80-Plus-Bronze.jpg" alt="Ant Esports RX550 550 Watt 80 Plus Bronze" class="product-image">
+            <h4 class="product-name">Ant Esports RX550 550 Watt 80 Plus Bronze</h4>
+            <p class="product-price">₹ 2,890.00</p>
+            <p class="product-description">Brand : Ant</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Ant Esports RX550 550 Watt 80 Plus Bronze',2890)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2023/10/Deepcool-PK450D-450-Watt-80-Plus-Bronze.webp" alt="DeepCool PK450D 450 Watt 80 Plus Bronze" class="product-image">
+            <h3 class="product-name">DeepCool PK450D 450 Watt 80 Plus Bronze</h3>
+            <p class="product-price">₹ 3,090.00</p>
+            <p class="product-description">Brand : DeepCool</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('DeepCool PK450D 450 Watt 80 Plus Bronze',3090)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2023/07/Antec-CSK-550-80-Plus-Bronze.webp" alt="Antec CSK 550 550 Watt 80 Plus Bronze" class="product-image">
+            <h3 class="product-name">Antec CSK 550 550 Watt 80 Plus Bronze</h3>
+            <p class="product-price">₹ 6,790.00</p>
+            <p class="product-description">Brand : Antec</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Antec CSK 550 550 Watt 80 Plus Bronze',6790)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/09/Ant-Esports-FG750-750-Watt-80-Plus-Gold.png" alt="Ant Esports FG750 750 Watt 80 Plus Gold" class="product-image">
+            <h3 class="product-name">Ant Esports FG750 750 Watt 80 Plus Gold</h3>
+            <p class="product-price">₹ 4,790.00</p>
+            <p class="product-description">Brand : Ant</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Ant Esports FG750 750 Watt 80 Plus Gold',4790)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/02/Corsair-CX650-650-Watt-80-Plus-Bronze.jpg" alt="Corsair CX650 650 Watt 80 Plus Bronze" class="product-image">
+            <h3 class="product-name">Corsair CX650 650 Watt 80 Plus Bronze</h3>
+            <p class="product-price">₹ 5,490.00</p>
+            <p class="product-description">Brand : Corsair</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Corsair CX650 650 Watt 80 Plus Bronze',5490)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/07/DeepCool-PN850M-ATX-3.1-850-Watt-80-Plus-Gold.webp" alt="DeepCool PN850M ATX 3.1 850 Watt 80 Plus Gold" class="product-image">
+            <h3 class="product-name">DeepCool PN850M ATX 3.1 850 Watt 80 Plus Gold</h3>
+            <p class="product-price">₹ 8,790.00</p>
+            <p class="product-description">Brand : DeepCool</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('DeepCool PN850M ATX 3.1 850 Watt 80 Plus Gold',8790)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2023/04/MSI-MEG-Ai1300P-PCIE5-1300-Watt-80-Plus-ATX-3.0-Fully-Modular.webp" alt="MSI MEG Ai1300P PCIE5 ATX 3.0 1300 Watt 80 Plus Platinum Fully Modular" class="product-image">
+            <h3 class="product-name">MSI MEG Ai1300P PCIE5 ATX 3.0 1300 Watt 80 Plus Platinum Fully Modular</h3>
+            <p class="product-price">₹ 29,990.00</p>
+            <p class="product-description">Brand : MSI</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('MSI MEG Ai1300P PCIE5 ATX 3.0 1300 Watt 80 Plus Platinum Fully Modular',29990)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/08/MSI-MAG-A1250GL-PCIE5-ATX-3.1-1250-Watt-80-Plus-Gold-Fully-Modular.jpg" alt="MSI MAG A1250GL PCIE5 ATX 3.1 1250 Watt 80 Plus Gold Fully Modular" class="product-image">
+            <h3 class="product-name">MSI MAG A1250GL PCIE5 ATX 3.1 1250 Watt 80 Plus Gold Fully Modular</h3>
+            <p class="product-price">₹ 19,790.00</p>
+            <p class="product-description">Brand : MSI</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('MSI MAG A1250GL PCIE5 ATX 3.1 1250 Watt 80 Plus Gold Fully Modular',19790)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2023/02/Cooler-Master-MWE-1050-V2-ATX3.0-1050-Watt-80-Plus-Gold-SMPS.jpg" alt="Cooler Master MWE 1050 V2 ATX 3.0 1050 Watt 80 Plus Gold Fully Modular" class="product-image">
+            <h3 class="product-name">Cooler Master MWE 1050 V2 ATX 3.0 1050 Watt 80 Plus Gold Fully Modular</h3>
+            <p class="product-price">₹ 16,790.00</p>
+            <p class="product-description">Brand : Cooler Master</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Cooler Master MWE 1050 V2 ATX 3.0 1050 Watt 80 Plus Gold Fully Modular',16790)">Add to Cart</button>
+        </div>
+
+
+        <!-- Add more CPUs like this -->
+    </section>
+
+    <script src="new component.js"></script>
+    <script src="loadnav.js"></script>
+</body>
+</html>
