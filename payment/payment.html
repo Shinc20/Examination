@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Gateway</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    
+
+    <div class="payment-container">
+        
+        <div class="left-section">
+            <div id="paypal-button-container"></div>
+            <div class="payment-option active">
+                <span>Payment by card</span>
+            </div>
+            </div>
+
+            <form id="paymentForm">
+                <div class="form-group">
+                    <label for="cardNumber">Card number</label>
+                    <input type="text" id="cardNumber" placeholder="XXXX XXXX XXXX XXXX" maxlength="19" required>
+                    <div class="card-icons">
+                        <img src="https://tse2.mm.bing.net/th?id=OIP.xL03XjjZ7shCuc0VYH4jOwHaCR&pid=Api&P=0&h=180" alt="Visa">
+                        <img src="https://tse4.mm.bing.net/th?id=OIP.J55-roM7PJPNOUNSxcqRKQHaDO&pid=Api&P=0&h=180g" alt="MasterCard">
+                        <img src="https://static.vecteezy.com/system/resources/previews/022/100/835/original/paypal-logo-transparent-free-png.png" alt="PayPal">
+                        <img src="https://cdn.freelogovectors.net/svg16/discover_card_logo-freelogovectors.net.svg" alt="Discover">
+                    </div>
+                </div>
+                <div class="form-group-inline">
+                    <div class="form-group">
+                        <label for="expiryDate">Expiry date</label>
+                        <input type="text" id="expiryDate" placeholder="MM/YY" maxlength="5" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV</label>
+                        <input type="password" id="cvv" placeholder="CVV" maxlength="3" required>
+                    </div>
+                </div>
+                <!-- Change Email to Account Holder Name -->
+                <div class="form-group">
+                    <label for="accountHolder">Account Holder Name</label>
+                    <input type="text" id="accountHolder" placeholder="Enter account holder name" required>
+                </div>
+                <button type="submit" id="payButton">PAY NOW</button>
+            </form>
+        </div>
+
+        <div class="right-section">
+            <h3>Order information</h3>
+            <p>Order description: Test payment</p>
+            <div class="card-icons-large">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.xL03XjjZ7shCuc0VYH4jOwHaCR&pid=Api&P=0&h=180" alt="Visa">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.J55-roM7PJPNOUNSxcqRKQHaDO&pid=Api&P=0&h=180" alt="MasterCard">
+                <img src="https://static.vecteezy.com/system/resources/previews/022/100/835/original/paypal-logo-transparent-free-png.png" alt="PayPal">
+                <img src="https://cdn.freelogovectors.net/svg16/discover_card_logo-freelogovectors.net.svg" alt="Discover">
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast container -->
+    <div id="toastContainer"></div>
+
+    <script src="payment.js"></script>
+    <script src="paypal.js"></script>
+    <script src="cod.js"></script>
+    <script src="https://www.paypal.com/sdk/js?client-id=AedPIgrXXaNjdjvcUEgUfhJMcYf2N-p0zD48vrJG5D4DJL3PC_P94GGNr3vK3mzOKGJ-bUBzQZp0YFYs&currency=USD"></script>
+
+</body>
+</html>
