@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motherboard</title>
+    <link rel="stylesheet" href="new component.css">
+</head>
+<body>
+    <header>
+        <div id="navbarContainer"></div>
+        <div class="image-container">
+            <div class="psu">
+                <img src="../images/mb1.png" alt="cabinet1" class="side-by-side">
+                <img src="../images/mb2.png" alt="cabinet2" class="side-by-side">
+            </div>
+        </div>
+        
+    </header>
+    <h1>Motherboard</h1>
+
+    <section class="product-list">
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/09/MSI-PRO-H610M-E-DDR5.webp" alt="MSI PRO H610M-E (DDR5)" class="product-image">
+            <h3 class="product-name">MSI PRO H610M-E (DDR5)</h3>
+            <p class="product-price">₹ 6,790.00</p>
+            <p class="product-description">Brand : MSI</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('MSI PRO H610M-E (DDR5)',6790)">Add to Cart</button>
+        </div>
+        
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/08/MSI-B760M-Bomber-WIFI-DDR4.jpg" alt="MSI B760M Bomber WIFI DDR4" class="product-image">
+            <h4 class="product-name">MSI B760M Bomber WIFI DDR4</h4>
+            <p class="product-price">₹ 6,990.00</p>
+            <p class="product-description">Brand : MSI</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('MSI B760M Bomber WIFI DDR4',6990)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2023/01/Asus-ROG-Strix-B760-F-Gaming-WIFI.webp" alt="ASUS ROG Strix B760-F Gaming WIFI (DDR5)" class="product-image">
+            <h3 class="product-name">ASUS ROG Strix B760-F Gaming WIFI (DDR5)</h3>
+            <p class="product-price">₹ 43,990.00</p>
+            <p class="product-description">Brand : ASUS</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('ASUS ROG Strix B760-F Gaming WIFI (DDR5)',43990)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2023/01/Asus-Prime-Z790-A-WIFI-CSM.webp" alt="ASUS PRIME Z790-A WIFI CSM (DDR5)" class="product-image">
+            <h3 class="product-name">ASUS PRIME Z790-A WIFI CSM (DDR5)</h3>
+            <p class="product-price">₹ 51,990.00</p>
+            <p class="product-description">Brand : ASUS</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('ASUS PRIME Z790-A WIFI CSM (DDR5)',51990)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/02/ASUS-ROG-Strix-Z790-H-Gaming-WIFI-DDR5.webp" alt="ASUS ROG Strix Z790-H Gaming WIFI (DDR5)" class="product-image">
+            <h3 class="product-name">ASUS ROG Strix Z790-H Gaming WIFI (DDR5)</h3>
+            <p class="product-price">₹ 19,990.00</p>
+            <p class="product-description">Brand : ASUS</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('ASUS ROG Strix Z790-H Gaming WIFI (DDR5)',19990)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/07/MSI-MPG-Z790-Edge-Ti-MAX-WIFI-DDR5.webp" alt="MSI MPG Z790 Edge Ti MAX WIFI (DDR5)" class="product-image">
+            <h3 class="product-name">MSI MPG Z790 Edge Ti MAX WIFI (DDR5)</h3>
+            <p class="product-price">₹ 11,990.00</p>
+            <p class="product-description">Brand : MSI</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('MSI MPG Z790 Edge Ti MAX WIFI (DDR5)',11990)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/07/MSI-MPG-Z790-Carbon-Max-WIFI-II.webp" alt="MSI MPG Z790 Carbon Max WIFI II (DDR5)" class="product-image">
+            <h3 class="product-name">MSI MPG Z790 Carbon Max WIFI II (DDR5)</h3>
+            <p class="product-price">₹ 1,990.00</p>
+            <p class="product-description">Brand : MSI</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('MSI MPG Z790 Carbon Max WIFI II (DDR5)',1990)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/02/ASUS-ROG-Strix-Z790-F-Gaming-WIFI-II-DDR5.webp" alt="ASUS ROG Strix Z790-F Gaming WIFI II (DDR5)" class="product-image">
+            <h3 class="product-name">ASUS ROG Strix Z790-F Gaming WIFI II (DDR5)</h3>
+            <p class="product-price">₹ 43,490.00</p>
+            <p class="product-description">Brand : ASUS</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('ASUS ROG Strix Z790-F Gaming WIFI II (DDR5)',43490)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/07/MSI-MEG-Z790-Ace-Max-Wi-Fi-DDR5.webp" alt="MSI MEG Z790 Ace Max (Wi-Fi) (DDR5)" class="product-image">
+            <h3 class="product-name">MSI MEG Z790 Ace Max (Wi-Fi) (DDR5)</h3>
+            <p class="product-price">₹ 1,990.00</p>
+            <p class="product-description">Brand : MSI</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('MSI MEG Z790 Ace Max (Wi-Fi) (DDR5)',1990)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/02/ASUS-ROG-Strix-B760-A-Gaming-WIFI-DDR5.webp" alt="ASUS ROG Strix B760-A Gaming WIFI (DDR5)" class="product-image">
+            <h3 class="product-name">ASUS ROG Strix B760-A Gaming WIFI (DDR5)</h3>
+            <p class="product-price">₹ 35,550.00</p>
+            <p class="product-description">Brand : ASUS</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('ASUS ROG Strix B760-A Gaming WIFI (DDR5)',35550)">Add to Cart</button>
+        </div>
+
+
+        <!-- Add more CPUs like this -->
+    </section>
+
+    <script src="new component.js"></script>
+    <script src="loadnav.js"></script>
+</body>
+</html>
