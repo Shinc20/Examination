@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAM</title>
+    <link rel="stylesheet" href="new component.css">
+</head>
+<body>
+    <header>
+        <div id="navbarContainer"></div>
+        <div class="image-container">
+            <div class="psu">
+                <img src="https://elitehubs.com/cdn/shop/files/cmt32gx5m2x7000c34-image-main-600x600.webp?v=1695323592&width=360" alt="cabinet1" class="side-by-side">
+                <img src="https://elitehubs.com/cdn/shop/files/cmp64gx5m2b6000c30w-image-main-600x600_result.webp?v=1719670634&width=360" alt="cabinet2" class="side-by-side">
+            </div>       
+        </div>
+
+        
+    </header>
+    <h1>RAM</h1>
+
+    <section class="product-list">
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2022/02/Adata-XPG-Spectrix-D50-RGB-16GB-8GBx2-DDR4-3200MHz-White.webp" alt="Adata XPG Spectrix D50 RGB 16GB (8GBx2) DDR4 3200MHz (White)" class="product-image">
+            <h3 class="product-name">Adata XPG Spectrix D50 RGB 16GB (8GBx2) DDR4 3200MHz (White)</h3>
+            <p class="product-price">₹ 6,990.00</p>
+            <p class="product-description">Brand : Adata</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Adata XPG Spectrix D50 RGB 16GB (8GBx2) DDR4 3200MHz (White)',6990)">Add to Cart</button>
+        </div>
+        
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2023/10/G.Skill-Trident-Z5-RGB-32GB-16GBx2-DDR5-6000MHz-Matte-White.webp" alt="G.Skill Trident Z5 RGB 32GB (16GBx2) DDR5 6000MHz (White)" class="product-image">
+            <h4 class="product-name">G.Skill Trident Z5 RGB 32GB (16GBx2) DDR5 6000MHz (White)</h4>
+            <p class="product-price">₹ 3510.00</p>
+            <p class="product-description">Brand : Trident</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('G.Skill Trident Z5 RGB 32GB (16GBx2) DDR5 6000MHz (White)',3510)">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/01/TeamGroup-T-Force-Delta-RGB-32GB-32GBx1-DDR5-6000MHz-White.png" alt="TeamGroup T-Force Delta RGB 32GB (32GBx1) DDR5 6000MHz (White)" class="product-image">
+            <h3 class="product-name">TeamGroup T-Force Delta RGB 32GB (32GBx1) DDR5 6000MHz (White)</h3>
+            <p class="product-price">₹ 7,555.00</p>
+            <p class="product-description">Brand : TeamGroup</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('TeamGroup T-Force Delta RGB 32GB (32GBx1) DDR5 6000MHz (White)',7555)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/06/Acer-Predator-Pallas-II-32GB-16GBx2-DDR5-6000MHz-Black-2.jpg" alt="Acer Predator Pallas II 32GB (16GBx2) DDR5 6000MHz (Black)" class="product-image">
+            <h4 class="product-name">Acer Predator Pallas II 32GB (16GBx2) DDR5 6000MHz (Black)</h4>
+            <p class="product-price">₹ 16,990.00</p>
+            <p class="product-description">Brand : Acer</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Acer Predator Pallas II 32GB (16GBx2) DDR5 6000MHz (Black)',16990)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2022/02/Corsair-Vengeance-Lpx-8GB-8GBx1-DDR4-3200MHz.webp" alt="Corsair Vengeance LPX 8GB (8GBx1) DDR4 3200MHz (Black)" class="product-image">
+            <h4 class="product-name">Corsair Vengeance LPX 8GB (8GBx1) DDR4 3200MHz (Black)</h4>
+            <p class="product-price">₹ 1,990.00</p>
+            <p class="product-description">Brand : Corsair</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Corsair Vengeance LPX 8GB (8GBx1) DDR4 3200MHz (Black)',1990)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2022/02/G.Skill-Ripjaws-V-8GB-8GBx1-DDR4-3200MHz.webp" alt="G.Skill Ripjaws V 16GB (16GBx1) DDR4 3200MHz (Black)" class="product-image">
+            <h4 class="product-name">G.Skill Ripjaws V 16GB (16GBx1) DDR4 3200MHz (Black)</h4>
+            <p class="product-price">₹ 9,090.00</p>
+            <p class="product-description">Brand : G.Skill</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('G.Skill Ripjaws V 16GB (16GBx1) DDR4 3200MHz (Black)',9090)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/10/Acer-Predator-Vesta-II-RGB-32GB-16GBx2-DDR5-6000MHz-Silver.webp" alt="Acer Predator Vesta II RGB 32GB (16GBx2) DDR5 6000MHz (Silver)" class="product-image">
+            <h4 class="product-name">Acer Predator Vesta II RGB 32GB (16GBx2) DDR5 6000MHz (Silver)</h4>
+            <p class="product-price">₹ 14,500.00</p>
+            <p class="product-description">Brand : Acer</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Acer Predator Vesta II RGB 32GB (16GBx2) DDR5 6000MHz (Silver)',14500)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2023/10/G.Skill-Trident-Z5-RGB-64GB-32GBx2-DDR5-6000MHz-Black.webp" alt="G.Skill Trident Z5 RGB 64GB (32GBx2) DDR5 6000MHz (Black)" class="product-image">
+            <h4 class="product-name">G.Skill Trident Z5 RGB 64GB (32GBx2) DDR5 6000MHz (Black)</h4>
+            <p class="product-price">₹ 6,990.00</p>
+            <p class="product-description">Brand : G.Skill</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('G.Skill Trident Z5 RGB 64GB (32GBx2) DDR5 6000MHz (Black)',6990)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2024/08/G.Skill-Trident-Z5-RGB-64GB-32GBx2-DDR5-6000MHz-White.jpg" alt="G.Skill Trident Z5 RGB 64GB (32GBx2) DDR5 6000MHz (White)" class="product-image">
+            <h4 class="product-name">G.Skill Trident Z5 RGB 64GB (32GBx2) DDR5 6000MHz (White)</h4>
+            <p class="product-price">₹ 6,990.00</p>
+            <p class="product-description">Brand : G.Skill</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('G.Skill Trident Z5 RGB 64GB (32GBx2) DDR5 6000MHz (White)',6990)">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://modxcomputers.com/wp-content/uploads/2023/10/TeamGroup-T-Force-Desktop-Ram-Delta-RGB-8GB-8GBx1-DDR4-3200MHz-White.webp" alt="TeamGroup T-Force Delta RGB 8GB (8GBx1) DDR4 3200MHz (White)" class="product-image">
+            <h4 class="product-name">TeamGroup T-Force Delta RGB 8GB (8GBx1) DDR4 3200MHz (White)</h4>
+            <p class="product-price">₹ 3,450.00</p>
+            <p class="product-description">Brand : TeamGroup</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity(this)">-</button>
+                <input type="number" value="1" min="1">
+                <button onclick="increaseQuantity(this)">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('TeamGroup T-Force Delta RGB 8GB (8GBx1) DDR4 3200MHz (White)',3450)">Add to Cart</button>
+        </div>
+
+
+        <!-- Add more CPUs like this -->
+    </section>
+
+    <script src="new component.js"></script>
+    <script src="loadnav.js"></script>
+</body>
+</html>
