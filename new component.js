@@ -35,12 +35,13 @@ function addToCart(productName, productPrice) {
         // Otherwise, add the new product to the cart
         cart.push({ name: productName, price: productPrice, quantity: quantity });
     }
-    
+
     // Save the updated cart to localStorage
     localStorage.setItem('cart', JSON.stringify(cart));
 
     alert(`${quantity} x ${productName} added to cart`);
     updateCartCount();
+    renderCart();
 }
 
 // Function to render the cart table
@@ -52,6 +53,13 @@ function renderCart() {
     // Fetch cart from localStorage again to ensure data is updated
     cart = JSON.parse(localStorage.getItem('cart')) || [];
     let totalPrice = 0;
+
+    // Check if the cart is empty
+    if (cart.length === 0) {
+        cartBody.innerHTML = '<tr><td colspan="5" style="text-align: center;"><b>Your cart is empty<b></td></tr>';
+        cartTotal.textContent = '₹0.00';
+        return;
+    }
 
     // Iterate over each item in the cart
     cart.forEach(item => {
@@ -93,8 +101,8 @@ function renderCart() {
         totalPrice += subtotal; // Accumulate subtotal to totalPrice
     });
 
-   // Display total without dollar sign
-   cartTotal.textContent = ` ₹${totalPrice.toFixed(2)}`; // Format total correctly
+    // Display total without dollar sign
+    cartTotal.textContent = `₹${totalPrice.toFixed(2)}`; // Format total correctly
 }
 
 // Function to update item quantity in the cart
@@ -118,6 +126,7 @@ function removeItem(name) {
     cart = cart.filter(item => item.name !== name);
     localStorage.setItem('cart', JSON.stringify(cart));
     renderCart();
+    updateCartCount(); // Update cart count after removing an item
 }
 
 // Function to update the cart item count in the UI
@@ -133,8 +142,16 @@ window.onload = function() {
     updateCartCount();
 }
 
-// Example: Checkout button event handler
+// Modified Checkout button event handler
 document.getElementById('checkout-btn')?.addEventListener('click', () => {
-    alert('Proceeding to checkout...');
-    window.location.href = '../billing/billing.html';
+    cart = JSON.parse(localStorage.getItem('cart')) || [];
+    
+    if (cart.length === 0) {
+        // If the cart is empty, show an alert and prevent redirection
+        alert('Your cart is empty! Please add something to proceed.');
+    } else {
+        // If there are items in the cart, proceed to checkout
+        alert('Proceeding to checkout...');
+        window.location.href = '../billing/billing.html';
+    }
 });
